@@ -192,4 +192,4 @@
 - ### Deploy HTML
     Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Jika aplikasi kita HTML atau Web App kita perlu mendeploy ke server. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify
 
-## CSS ()
+## CSS (Cascading Style Sheet)
