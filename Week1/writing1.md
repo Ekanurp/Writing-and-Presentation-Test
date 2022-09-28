@@ -57,15 +57,19 @@
 
 - ### Alur Kerja GIT dan GITHUB
     - Setup Awal
+
         ![2.png](2.png)
 
     - Cek apakah setup berhasil
+
         ![3.png](3.png)
 - ### Membuat Repository GIT
     - Membuat repository menggunakan git init <nama_proyek>
+
         ![4.png](4.png)
 
     - Melacak perubahan menggunakan git status
+
         ![5.png](5.png)
 - ### Commit pada GIT
     - git commit, untuk melakukan commit atau menyimpan perubahan pada version control pada git. Dan kita bisa menambahkan pesan untuk membeikan checkout pada setiap perbuahan. Contoh seperti gambar di bawah ini.
@@ -73,9 +77,11 @@
         ![6.png](6.png)
 - ### Publish Aplikasi ke GITHUB
     - git push origin, untuk mempublish file atau aplikasi ke github.
+
         ![7.jfif](7.jfif)
 - ### Cloning GITHUB ke Local
     - git clone, untuk melakukan cloning dari github ke komputer atau local
+
         ![8.jfif](8.jfif)
 
 ## HTML (Hyper Text Markup Language)
@@ -133,6 +139,7 @@
     ```
 
     Hasil di browser akan seperti di bawah ini:
+
         ![9.png](9.png)
 
 - ### Paragraf
@@ -145,6 +152,7 @@
     ```
 
     Hasil di browser akan seperti di bawah ini:
+
         ![10.png](10.png)
     
 - ### Link/Anchor
@@ -165,6 +173,7 @@
     ```
 
     Hasil di browser akan seperti di bawah ini:
+
         ![11.png](11.png)
 - ### Huruf Tebal
     Tag ```<b>``` atau ```<strong>``` digunakan untuk membuat tulisan menjadi tebal.
@@ -176,6 +185,7 @@
     </p>
     ```
     Contoh di atas akan terlihat di browser seperti ini:
+
         ![12.png](12.png)
 - ### Gambar
     Untuk menampilkan gambar pada halaman sebuah website, maka kita membutuhkan tag <img>.
@@ -188,8 +198,124 @@
     Attribute alt memberikan informasi alternatif atas gambar jika pengguna tidak bisa melihat gambar di website kita. Attribute alt harus mendeskripsikan tentang gambar yang bersangkutan jika gambar tersebut berisi informasi.
     
     Hasil dari kode di atas pada browser akan terlihat seperti ini:
+
         ![13.png](13.png)
 - ### Deploy HTML
     Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Jika aplikasi kita HTML atau Web App kita perlu mendeploy ke server. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify
 
 ## CSS (Cascading Style Sheet)
+
+- ### Peran CSS pada web development
+    CSS adalah bahasa komputer yang digunakan untuk menambahkan design ke suatu halaman website. Fungsi CSS adalah sebagai **'baju'** atau **'dekorator'** dari sebuah website.
+
+- ### Cara menyisipkan CSS ke dalam HTML
+    Ada 3 cara untuk menyisipkan CSS ke dalam HTML, yaitu:
+    - **Inline CSS**, yaitu menggunakan attribute style untuk menyisipkan kode CSS langsung di dalam HTML element.
+
+        Contoh:
+        ```bash
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>
+            Website Pertamaku
+            </title>
+        </head>
+        <body>
+            <h1 style="color:blue;">Hello World!!</h1>
+        </body>
+        </html>
+        ```
+
+        Hasilnya:
+
+        ![14.png](14.png)
+
+    - **Internal CSS**, yaitu menggunakan element ```<style>``` untuk menyisipkan kode CSS. Element ```<style>``` tersebut diletakkan di dalam element .
+
+        Contoh:
+        ```bash
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Belajar CSS</title>
+            <style>
+            body {
+                background-color: green;
+            }
+            h1 {
+                color: yellow;
+            }
+            p {
+                color: pink;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Belajar CSS</h1>
+            <p>Hello World!!</p>
+        </body>
+        </html>
+        ```
+
+        Hasilnya:
+
+        ![15.png](15.png)
+
+    - **External CSS**, yaitu sebuah file CSS terpisah yang disambungkan dengan file HTML dengan menggunakan element ```<link>```.
+        Contoh:
+        ```bash
+        <!-- File index.html -->
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Belajar CSS</title>
+            <link rel="stylesheet" href="styles.css" />
+        </head>
+        <body>
+            <h1>Belajar CSS</h1>
+            <p>Hello World!!</p>
+        </body>
+        </html>
+
+        /* File styles.css */
+        body {
+        background-color: pink;
+        }
+        h1 {
+        color: green;
+        }
+        p {
+        color: blue;
+        }
+        ```
+
+        Hasilnya:
+
+        ![16.png](16.png)
+
+- ### CSS Syntax
+    CSS Syntax adalah syntax yang digunakan untuk menunjuk atau memilih HTML element mana yang ingin diberi style (dihias). CSS syntax terdiri dari selector, property, dan value.
+
+    Syntaxnya seperti ini:
+    ```bash
+    selector {
+    property: value;
+    }
+    ```
+
+    Contoh:
+    
+    Misalnya kita memiliki element paragraf ```<p>``` yang ingin kita ubah menjadi warna biru. Caranya seperti di bawah ini:
+    ```bash
+    <!-- Pada file HTML -->
+    <p>Hello world</p>
+
+    /* Pada file CSS */
+    p {
+    color: blue;
+    }
+    ```
+    
+- ### Metode responsive web design menggunakan CSS
+- ### Flexbox
