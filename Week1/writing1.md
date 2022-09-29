@@ -140,7 +140,7 @@
 
     Hasil di browser akan seperti di bawah ini:
 
-        ![9.png](9.png)
+    ![9.png](9.png)
 
 - ### Paragraf
     Untuk membuat paragraf pada halaman website, maka dibutuhkan tag ```<p>```.
@@ -351,6 +351,93 @@
         - **container** adalah element yang membungkus dan mengatur tampilan dari element di dalamnya,
         - **item** adalah element dalam container yang diatur tampilannya.
 
+
+## JavaScript Dasar
+Fungsi JavaScript, sebagai element yang membuat website menjadi **interaktif**.
+
+Sebelum mulai masuk mempelajari JavaScript lebih dalam, ada baiknya kita mempelajari dahulu bagaimana cara menyisipkan JavaScript di dalam HTML. Hal ini ditujukan agar kode JavaScript kita bisa dibaca oleh browser, dan bisa berinteraksi dengan kode HTML kita.
+
+Ada dua cara, yaitu:
+
+- **Internal JavaScript**, yaitu menyisipkan kode JavaScript langsung di dalam file HTML.
+- **External JavaScript**, yaitu membuat file JavaScript sendiri dan menyambungkannya dengan file HTML.
+
+- ### Internal JavaScript
+    Untuk menyisipkan kode JavaScript di dalam file HTML, kita bisa menuliskan kode JavaScript di dalam tag ```<script>```. Tag ```<script>``` sendiri bisa ditulis di dalam ```<head>``` maupun di dalam bagian akhir dari ```<body>```.
+
+    Contoh:
+    ```bash
+    <!-- <script> tag di dalam <head> -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Website Pertamaku</title>
+        <script>
+        console.log("Halo Semua!"); // output : Halo Semua!
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript di dalam head</h2>
+    </body>
+    </html>
+    <!-- <script> tag di dalam <body> -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Website Pertamaku</title>
+    </head>
+    <body>
+        <h2>JavaScript di dalam body</h2>
+
+        <script>
+        console.log("Halo Semua!"); // output : Halo Semua!
+        </script>
+    </body>
+    </html>
+    ```
+
+- ### Eksternal JavaScript
+    Eksternal JavaScript yaitu membuat file JavaScript yang terpisah dengan file HTML.
+
+    Cara menyambungkannya sama seperti internal JavaScript, yaitu menggunakan tag ```<script>``` di dalam element ```<body>```, hanya saja, kita menambahkan attribute src di dalam ```<script>``` untuk menyambungkan dengan file eksternal JavaScript kita.
+
+    Contoh:
+
+    Kita akan membuat dua buah file yaitu ```script.js``` dan ```index.html```.
+
+    Pada file HTML, kita akan sambungkan file JavaScript menggunakan element ```<script>```, seperti ini:
+    ```bash
+    <!-- File index.html -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Website Pertamaku</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h2>Hello, World!</h2>
+    </body>
+    </html>
+
+    // File script.js
+
+    console.log("Halo Semua!"); // output : Halo Semua!
+    ```
+
+    Sama seperti internal JavaScript, hasil dari cara ini jika dibuka di console akan menghasikan tulisan "Halo Semua!"
+
+- ### Tipe Data dalam JavaScript
+    - string - deretan karakter yang diapit oleh sepasang tanda kutip;
+    - **number** - bilangan bulat, pecahan, dan lain-lain;
+    - **boolean** - nilai benar dari sebuah pernyataan yang dituliskan sebagai true atau false;
+    - **null** - sebuah nilai yang berarti kosong atau menunjuk pada nilai yang tidak ada;
+    - **undefined** - berbeda dari null, undefined menandakan kondisi variabel yang belum diberi sebuah nilai. Jadi pernyataan "nilai variabel itu adalah undefined" sebenarnya kurang tepat, sebab variabelnya memang tidak mempunyai sebuah nilai;
+    - **symbol** - sebuah nilai unik yang dihasilkan tiap kali kita memanggil fungsi Symbol(). Nilai unik ini memiliki beberapa kegunaan seperti memberi nomor identifikasi unik dan berperan sebagai nama properti unik sebuah objek;
+    - **object** - sebuah kumpulan pasangan properti dan nilai. Seperti objek dalam kehidupan sehari-hari saja. Misalnya objek Apel memiliki properti warna dengan nilai merah.
+
 ## Algoritma dan Data Structures
 Sebelum kita memperdalam pengetahuan kita mengenai tipe-tipe algoritma dan data structure, mari kita mengenal terlebih dahulu secara singkat apa itu algorithm dan data structures.
 
@@ -371,9 +458,35 @@ Sebelum kita memperdalam pengetahuan kita mengenai tipe-tipe algoritma dan data 
     - Tepat sasaran dan efisien
 
 - ### Jenis Proses dalam Algoritma
-    - Sequence
+    - Sequence 
+        urut/runut (menyelesaikan masalah line by line)
+
+        Contoh:
+        ```bash
+        let a = 2;
+        let b = 5;
+        let c = 0;
+        c = a + b;
+
+        Console.log(c)
+        ```
     - Selection
-    - Repetition
+        Percabangan (jika ... maka ...) 
+
+        Contoh:
+        ```bash
+        if (2 < 10) {
+            display ("Benar")
+        }else{
+            display ("Salah") //output: "Benar"
+        }
+        ```
+    - Repetition/ Loop
+        Perulangan. Dalam algoritma terdapat 3 jenis repetition yaitu for, while ... do, do ... while.
+
+        - For yaitu perulangan yang fix
+        - While ... do yaitu perulangan by condition. Perulangan yang dilakukan ketika ada suatu kondisi. Dilakukan disaat kita melakukan pencarian.
+        - do ... while yaitu perulangan yang akan menjalankan dulu baru akan dicek kondisinya.
 
 - ### Pseudocode
     - Pseudocode merupakan representasi dari suatu algoritma yang menggunakan bahasa sehari-hari. Pseudocode bisa menjadi awal yang baik untuk mengembangkan algoritma ketika Anda tidak memiliki pengetahuan latar belakang yang cukup tentang pemrograman.
