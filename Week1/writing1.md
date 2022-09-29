@@ -153,7 +153,7 @@
 
     Hasil di browser akan seperti di bawah ini:
 
-        ![10.png](10.png)
+    ![10.png](10.png)
     
 - ### Link/Anchor
     Terkadang, kita membutuhkan halaman web yang kita buat bisa mengakses halaman web lain. Maka dari itu, kita butuh membuat link.
@@ -174,7 +174,7 @@
 
     Hasil di browser akan seperti di bawah ini:
 
-        ![11.png](11.png)
+    ![11.png](11.png)
 - ### Huruf Tebal
     Tag ```<b>``` atau ```<strong>``` digunakan untuk membuat tulisan menjadi tebal.
 
@@ -186,7 +186,7 @@
     ```
     Contoh di atas akan terlihat di browser seperti ini:
 
-        ![12.png](12.png)
+    ![12.png](12.png)
 - ### Gambar
     Untuk menampilkan gambar pada halaman sebuah website, maka kita membutuhkan tag <img>.
 
@@ -199,7 +199,7 @@
     
     Hasil dari kode di atas pada browser akan terlihat seperti ini:
 
-        ![13.png](13.png)
+    ![13.png](13.png)
 - ### Deploy HTML
     Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Jika aplikasi kita HTML atau Web App kita perlu mendeploy ke server. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify
 
@@ -318,4 +318,68 @@
     ```
     
 - ### Metode responsive web design menggunakan CSS
-- ### Flexbox
+
+    - **Mengatur Viewport**
+        
+        Secara umum viewport adalah daerah pada layar yang menampilkan suatu konten.
+    - **Menggunakan Persentase untuk Menentukan Nilai Lebar Suatu Element**
+        
+        Kita bisa menggunakan persentase untuk menentukan lebar suatu element agar sama dengan lebar parent element-nya.
+    - **Properti 'max-width: 100%'**
+        
+        Kita bisa menggunakan properti ```max-width: 100%``` untuk menentukan lebar maksimal dari suatu element.
+
+    - **Satuan Unit "vw"**
+
+        Suatu teks bisa diatur ukurannya dengan menggunakan vw, yang artinya viewport width. Viewport adalah ukuran lebar window browser.
+        
+        Catatan:
+        1vw = 1% lebar viewport
+
+        Jika lebar viewport sebesar 100cm, maka 1vw adalah 1cm
+
+    - **Media Query**
+        
+        Dengan menggunakan media query, kita bisa mengatur lebar suatu element dan/atau memberikan style lain yang berbeda-beda sesuai dengan ukuran dari browser.
+
+    - **Flexbox Element**
+        
+        Flexbox memudahkan para programmer untuk mengatur layout, posisi, dan ukuran dari tiap element di dalamnya.
+
+        Ada dua istilah penting saat belajar flexbox:
+
+        - **container** adalah element yang membungkus dan mengatur tampilan dari element di dalamnya,
+        - **item** adalah element dalam container yang diatur tampilannya.
+
+## Algoritma dan Data Structures
+Sebelum kita memperdalam pengetahuan kita mengenai tipe-tipe algoritma dan data structure, mari kita mengenal terlebih dahulu secara singkat apa itu algorithm dan data structures.
+
+- **Algorithm** mengacu pada step-by-step procedure untuk memecahkan masalah yang diberikan dengan cara yang paling efektif.
+
+- Sementara **data structures** adalah konsep abstrak yang membentuk dan mengatur data agar data di dalam komputer dapat diakses dan diperbarui secara efisien.
+
+- ###  Apa itu Algoritma
+    - Algoritma adalah sekumpulan instruksi untuk melakukan sesuatu.
+    - Suatu algoritma harus memiliki urutan perhitungan dan tugas yang masuk akal untuk memecahkan masalah, bukan hanya sekumpulan perintah.
+    - Kita dapat merencanakan untuk membuat algoritma, yang merupakan prosedur yang terdiri dari perintah untuk pemecahan masalah. Proses perencanaan algoritma dapat dibuat dengan pseudocode dan flowchart.
+
+- ### Ciri-Ciri Algoritma
+    - Memiliki input
+    - Memiliki output
+    - Memiliki instruksi yang jelas/tidak ambigu
+    - Memiliki titik berhenti
+    - Tepat sasaran dan efisien
+
+- ### Jenis Proses dalam Algoritma
+    - Sequence
+    - Selection
+    - Repetition
+
+- ### Pseudocode
+    - Pseudocode merupakan representasi dari suatu algoritma yang menggunakan bahasa sehari-hari. Pseudocode bisa menjadi awal yang baik untuk mengembangkan algoritma ketika Anda tidak memiliki pengetahuan latar belakang yang cukup tentang pemrograman.
+    - Pseudocode berperan sebagai jembatan untuk melengkapi flowchart dan kode yang sebenarnya. Ini sering digunakan oleh programmer sebagai pedoman dasar ketika mereka mengimplementasikan kode yang sebenarnya.
+
+- ### Flowchart
+    - Flowchart mengungkapkan perintah dengan beberapa bentuk standar dan alur kerja menggunakan panah.
+    - Untuk bentuk dan simbol, menggunakan standar yang ditetapkan oleh Organisasi Internasional untuk Standardisasi (ISO).
+    - Penting untuk menggambar flowchart dari atas ke bawah dan dari kiri ke kanan tanpa saling tumpang tindih.
