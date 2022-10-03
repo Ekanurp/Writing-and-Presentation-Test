@@ -1,4 +1,4 @@
-# Writing Week 1
+# Writing Week 2
 ## JavaScript Dasar - Scope
 Scope adalah konsep dalam flow data variabel.
 
