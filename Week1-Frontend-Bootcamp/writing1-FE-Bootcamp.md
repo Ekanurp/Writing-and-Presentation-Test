@@ -36,4 +36,21 @@ function App() {
 export default App;
 ```
 
+**Memberi image**
+gunakan code seperti di bawah ini:
+```bash
+function App() {
 
+    return (
+        <div>
+            <img src="" alt=""/>
+        </div>
+    )
+};
+
+export default App;
+```
+
+Kemudian untuk mengatur styling image dapat menggunakan CSS. Kalau di react, pertama kita buat file CSSnya bebas dimana, kemudian diimport CSSnya ke dalam react nya. Caranya menggunakan code ``import "./App.css";``. Penempatannya bisa di baris paling atas codingan.
+
+Di react jika ingin membuat class bukan dengan ``class=""`` tetapi dengan ``className=""``. Class bebas diberi nama apa aja untuk nanti kita panggil di file CSSnya. Kemudian tinggal styling pada file CSS seperti biasa.
