@@ -54,3 +54,7 @@ export default App;
 Kemudian untuk mengatur styling image dapat menggunakan CSS. Kalau di react, pertama kita buat file CSSnya bebas dimana, kemudian diimport CSSnya ke dalam react nya. Caranya menggunakan code ``import "./App.css";``. Penempatannya bisa di baris paling atas codingan.
 
 Di react jika ingin membuat class bukan dengan ``class=""`` tetapi dengan ``className=""``. Class bebas diberi nama apa aja untuk nanti kita panggil di file CSSnya. Kemudian tinggal styling pada file CSS seperti biasa.
+
+**State dan Props**
+
+State dan props merupakan data, tetapi keduanya berbeda. State adalah data yang terdapat dalam internal komponen. Sedangkan props adalah data yang diberikan pada komponen dari parentnya.
